@@ -1,0 +1,63 @@
+.content {
+    display: flex;
+    
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    display: flex;
+    background-color: #b2b2b2;
+    background-color: rgba(0, 0, 0, .3);
+    /* border: 1px solid black; */
+    height: 80vh;
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid blue; */
+    justify-content: space-around;
+    height: 40vh;
+}
+
+.imageItem{
+    display: flex;
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem;
+    /* border: 1px solid red; */
+}
+
+.nameItem{
+    font-size: 3vh;
+}
+
+.navbarLogoItem{
+    cursor: pointer;
+}
+
+.socialMediaContainer{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 10rem;
+    justify-content: space-around;
+}
+
+
+.donationItem{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 15rem;
+    height: 10rem;
+    border-radius: 5%;
+    cursor: pointer;
+}

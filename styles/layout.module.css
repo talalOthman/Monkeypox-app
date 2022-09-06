@@ -1,0 +1,39 @@
+.navbar{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 10vh;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vh;
+}
+
+.navbarItems{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid purple; */
+    width: 100vw;
+    padding: 3rem;
+}
+
+.navbarSubItems{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    width: 8vw;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid blue; */
+    height: 90vh;
+    overflow: none;
+}
+
+.navbarLogoItem{
+    cursor: pointer;
+}
