@@ -428,7 +428,7 @@
   /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  margin-top: -10rem;
+  margin-top: -5rem;
 }
 
 .uploadInputItem{
