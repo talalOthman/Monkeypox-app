@@ -20,7 +20,7 @@ export default function Home() {
 
       const body = new FormData()
       body.append("uploaded_file", data1)
-      const response = await fetch("http://127.0.0.1:8000/predict", {
+      const response = await fetch("https://monkeypox-detector-api.herokuapp.com/predict", {
         method: "POST",
         body
       })
