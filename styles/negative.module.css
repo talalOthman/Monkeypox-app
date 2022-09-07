@@ -1,11 +1,11 @@
-.content {
+.negativeContent {
     display: flex;
     /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
 }
 
-.card {
+.negativeCard {
     display: flex;
     background-color: #b2b2b2;
     background-color: rgba(0, 0, 0, .3);
@@ -19,7 +19,7 @@
     border-radius: 5px;
 }
 
-.symbolContainer{
+.negativeSymbolContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
     width: 80vw;
 }
 
-.symbolItem{
+.negativeSymbolItem{
     display: flex;
     border-radius: 50%;
     height: 15rem;
@@ -37,12 +37,12 @@
     /* border: 1px solid red; */
 }
 
-.nameItem{
+.negativeNameItem{
     font-size: 3vh;
     margin-top: 1.5vh;
 }
 
-.detailsContainer{
+.negativeDetailsContainer{
     display: flex;
     /* border: 1px solid red; */
     height: 25vh;
@@ -51,7 +51,7 @@
     align-items: center;
 }
 
-.lowerSection{
+.negativeLowerSection{
     display: flex;
     /* border: 1px solid green; */
     flex-direction: column;
@@ -59,7 +59,7 @@
     height: 30vh
 }
 
-.symptomsContainer{
+.negativeSymptomsContainer{
     display: flex;
     border: 1px solid white;
     width: 35vw;
@@ -70,7 +70,7 @@
     border-radius: 5px;
 }
 
-.contactsContainer{
+.negativeContactsContainer{
     display: flex;
     border: 1px solid white;
     width: 35vw;
@@ -81,19 +81,19 @@
     border-radius: 5px;
 }
 
-.contactsContainer:hover{
+.negativeContactsContainer:hover{
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
-.symptomsContainer:hover{
+.negativeSymptomsContainer:hover{
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
-.buttonItem{
+.negativeButtonItem{
     border: 1px solid white;
     height: 6vh;
     width: 8rem;
@@ -101,7 +101,7 @@
     border-radius: 5px;
 }
 
-.buttonItem:hover{
+.negativeButtonItem:hover{
     background-color: white;
     color: black;
 }

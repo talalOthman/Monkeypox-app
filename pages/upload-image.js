@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import styles from '../styles/upload-image.module.css'
+// import styles from '../styles/upload-image.module.css'
+import styles from '../styles/Home.module.css'
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router'
@@ -77,14 +78,14 @@ export default function Home() {
         Submit Image
       </button> */}
 
-      <div className={styles.content}>
-        <div className={styles.mainContent}>
+      <div className={styles.uploadContent}>
+        <div className={styles.uploadMainContent}>
           <FontAwesomeIcon
             icon={faCloudUploadAlt}
             style={{ fontSize: 200 }} />
-          <input id="uploadImage" className={styles.inputItem} accept="image/x-png,image/gif,image/jpeg" type="file" onChange={uploadToClient}></input>
+          <input id="uploadImage" className={styles.uploadInputItem} accept="image/x-png,image/gif,image/jpeg" type="file" onChange={uploadToClient}></input>
 
-          <label htmlFor="uploadImage" className={styles.buttonItem}>
+          <label htmlFor="uploadImage" className={styles.uploadButtonItem}>
             Upload Image
           </label>
 

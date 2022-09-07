@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Layout from './components/layout';
-import styles from '../styles/about.module.css'
+// import styles from '../styles/about.module.css'
+import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -16,50 +17,50 @@ export default function Home() {
     
     return (
         // <Layout props={0x249aaa}>
-            <div className={styles.content}>
-                <div className={styles.card}>
-                    <div className={styles.imageContainer}>
-                        <div className={styles.imageItem}>
+            <div className={styles.aboutContent}>
+                <div className={styles.aboutCard}>
+                    <div className={styles.aboutImageContainer}>
+                        <div className={styles.aboutImageItem}>
                             <Image
                                 src="/images/Talal.jpg"
                                 alt="Picture of the author"
                                 width={500}
                                 height={500}
-                                className={styles.imageItem}
+                                className={styles.aboutImageItem}
                             />
                         </div>
-                        <h1 className={styles.nameItem}>Talal Al-Ahdal</h1>
+                        <h1 className={styles.aboutNameItem}>Talal Al-Ahdal</h1>
                     </div>
-                    <div className={styles.socialMediaContainer}>
+                    <div className={styles.aboutSocialMediaContainer}>
                         <Link href="https://www.linkedin.com/in/talalothman/">
                             <FontAwesomeIcon
                                 icon={faLinkedin}
                                 style={{ fontSize: 25 }}
-                                className={styles.navbarLogoItem}
+                                className={styles.aboutNavbarLogoItem}
                             /></Link>
 
                         <Link href="https://talal-portfolio.herokuapp.com">
                             <FontAwesomeIcon
                                 icon={faGlobe}
                                 style={{ fontSize: 25 }}
-                                className={styles.navbarLogoItem}
+                                className={styles.aboutNavbarLogoItem}
                             /></Link>
 
                         <Link href="https://github.com/talalOthman" >
                             <FontAwesomeIcon
                                 icon={faGithub}
                                 style={{ fontSize: 25 }}
-                                className={styles.navbarLogoItem}
+                                className={styles.aboutNavbarLogoItem}
                             /></Link>
                     </div>
-                    <div className={styles.donationItem}>
+                    <div className={styles.aboutDonationItem}>
                         <Link href="https://www.buymeacoffee.com/talalOthman">
                         <Image
                             src="/images/buymecoffe.jpeg"
                             alt="Picture of the author"
                             width={500}
                             height={500}
-                            className={styles.donationItem}
+                            className={styles.aboutDonationItem}
                         />
                         </Link>
                     </div>

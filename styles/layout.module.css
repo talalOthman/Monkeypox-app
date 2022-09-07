@@ -1,4 +1,4 @@
-.navbar{
+.layoutNavbar{
     display: flex;
     /* border: 1px solid red; */
     height: 10vh;
@@ -8,7 +8,7 @@
     font-size: 2vh;
 }
 
-.navbarItems{
+.layoutNavbarItems{
     display: flex;
     justify-content: space-between;
     /* border: 1px solid purple; */
@@ -16,7 +16,7 @@
     padding: 3rem;
 }
 
-.navbarSubItems{
+.layoutNavbarSubItems{
     display: flex;
     justify-content: space-between;
     /* border: 1px solid black; */
@@ -24,7 +24,7 @@
 }
 
 
-.content{
+.layoutContent{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,6 +34,6 @@
     overflow: none;
 }
 
-.navbarLogoItem{
+.layoutNavbarLogoItem{
     cursor: pointer;
 }

@@ -1,11 +1,11 @@
-.content {
+.positiveContent {
     display: flex;
     /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
 }
 
-.card {
+.positiveCard {
     display: flex;
     background-color: #b2b2b2;
     background-color: rgba(0, 0, 0, .3);
@@ -19,7 +19,7 @@
     border-radius: 5px;
 }
 
-.symbolContainer{
+.positiveSymbolContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
     width: 80vw;
 }
 
-.symbolItem{
+.positiveSymbolItem{
     display: flex;
     border-radius: 50%;
     height: 15rem;
@@ -37,11 +37,11 @@
     /* border: 1px solid red; */
 }
 
-.nameItem{
+.positiveNameItem{
     font-size: 3vh;
 }
 
-.detailsContainer{
+.positiveDetailsContainer{
     display: flex;
     /* border: 1px solid red; */
     height: 25vh;
@@ -50,7 +50,7 @@
     align-items: center;
 }
 
-.lowerSection{
+.positiveLowerSection{
     display: flex;
     /* border: 1px solid green; */
     flex-direction: column;
@@ -58,7 +58,7 @@
     height: 30vh
 }
 
-.symptomsContainer{
+.positiveSymptomsContainer{
     display: flex;
     border: 1px solid white;
     width: 35vw;
@@ -69,7 +69,7 @@
     border-radius: 5px;
 }
 
-.contactsContainer{
+.positiveContactsContainer{
     display: flex;
     border: 1px solid white;
     width: 35vw;
@@ -80,19 +80,19 @@
     border-radius: 5px;
 }
 
-.contactsContainer:hover{
+.positiveContactsContainer:hover{
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
-.symptomsContainer:hover{
+.positiveSymptomsContainer:hover{
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
-.buttonItem{
+.positiveButtonItem{
     border: 1px solid white;
     height: 6vh;
     width: 8rem;
@@ -100,7 +100,7 @@
     border-radius: 5px;
 }
 
-.buttonItem:hover{
+.positiveButtonItem:hover{
     background-color: white;
     color: black;
 }

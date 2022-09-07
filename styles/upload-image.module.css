@@ -1,4 +1,4 @@
-.content{
+.uploadContent{
     /* border: 1px solid blue; */
     height: 100vh;
     display: flex;
@@ -8,7 +8,7 @@
     
 }
 
-.buttonItem {
+.uploadButtonItem {
     display: inline-block;
     padding: 0.35rem 1.2rem;
     border: 0.1rem solid #FFFFFF;
@@ -26,20 +26,20 @@
     border-radius: 5px;
 }
 
-.buttonItem:hover {
+.uploadButtonItem:hover {
     color: #000000;
     background-color: #FFFFFF;
 }
 
 
-.mainContent{
+.uploadMainContent{
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     margin-top: -10rem;
 }
 
-.inputItem{
+.uploadInputItem{
     display: none;
 }
 
@@ -47,11 +47,11 @@
 @media all and (max-width:30em) {
     
 
-    .titleItem {
+    .uploadTitleItem {
         font-size: 10vw;
     }
 
-    .subTitleItem {
+    .uploadSubTitleItem {
         font-size: 3vw;
     }
 }

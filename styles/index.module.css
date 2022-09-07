@@ -1,10 +1,10 @@
-.contentContainer{
+.indexContentContainer{
     display: flex;
     flex-direction: column;
     
 }
 
-.titleContainer {
+.indexTitleContainer {
     /* border: 1px solid green; */
     display: flex;
     flex-direction: column;
@@ -15,23 +15,23 @@
     margin-top: -5rem;
 }
 
-.titleItem {
+.indexTitleItem {
     font-size: 7vw;
     color: white;
 }
 
-.subTitleItem {
+.indexSubTitleItem {
     font-size: 2vw;
     color: white;
 }
 
-.buttonContainer {
+.indexButtonContainer {
     display: flex;
     /* border: 1px solid red; */
     justify-content: center;
 }
 
-.buttonItem{
+.indexButtonItem{
     border: 1px solid white;
     height: 6vh;
     width: 8rem;
@@ -39,7 +39,7 @@
     border-radius: 5px;
 }
 
-.buttonItem:hover{
+.indexButtonItem:hover{
     background-color: white;
     color: black;
 }
@@ -47,15 +47,15 @@
 
 @media all and (max-width:30em) {
 
-    .titleItem {
+    .indexTitleItem {
         font-size: 10vw;
     }
 
-    .subTitleItem {
+    .indexSubTitleItem {
         font-size: 3vw;
     }
 
-    .titleContainer{
+    .indexTitleContainer{
       height: 27vh;
     }
 }
