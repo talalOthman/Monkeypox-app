@@ -83,7 +83,7 @@ export default function Home() {
           <FontAwesomeIcon
             icon={faCloudUploadAlt}
             style={{ fontSize: 200 }} />
-          <input id="uploadImage" className={styles.uploadInputItem} accept="image/x-png,image/gif,image/jpeg" type="file" onChange={uploadToClient}></input>
+          <input id="uploadImage" className={styles.uploadInputItem} type="file" onChange={uploadToClient}></input>
 
           <label htmlFor="uploadImage" className={styles.uploadButtonItem}>
             Upload Image
