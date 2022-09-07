@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import '../styles/transition.css'
+import '../styles/Home.module.css'
 import { useEffect } from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
