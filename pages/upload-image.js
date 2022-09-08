@@ -11,12 +11,14 @@ import { faCloudUploadAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const [image, setImage] = useState([])
+  const [cover, setCover] = useState(false);
   const router = useRouter()
 
   const uploadToClient = async (event) => {
     if (event.target.files && event.target.files[0]) {
       const i = event.target.files[0];
       // setImage(i);
+      setCover(!cover)
       const data1 = i
 
       const body = new FormData()
@@ -33,7 +35,7 @@ export default function Home() {
       //   { pathname: "/submit-image", query: { name: finalData.prediction } },
       //   "/submit-image"
       // );
-
+      // setCover(!cover)
       if (finalData.prediction == "Monkeypox") {
         router.push('/positive-monkeybox')
       } else {
@@ -77,7 +79,9 @@ export default function Home() {
       >
         Submit Image
       </button> */}
-
+      <div className={styles.cover} style={{
+        display: cover?"block":"none"
+      }}></div>
       <div className={styles.uploadContent}>
         <div className={styles.uploadMainContent}>
           <FontAwesomeIcon
