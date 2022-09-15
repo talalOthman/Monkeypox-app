@@ -26,9 +26,19 @@ export default function Home() {
       const response = await fetch("https://monkeypox-detector-api.herokuapp.com/predict", {
         method: "POST",
         body
-      })
+      }).catch(() => {
+        // Your error is here!
+        router.push('/negative-monkeybox')
+      });
 
-      const finalData = await response.json()
+      if(response){
+        const finalData = await response.json()
+        if (finalData.prediction == "Monkeypox") {
+          router.push('/positive-monkeybox')
+        } else {
+          router.push('/negative-monkeybox')
+        }
+      }
       // console.log(finalData.prediction)
 
       // router.push(
@@ -36,11 +46,6 @@ export default function Home() {
       //   "/submit-image"
       // );
       // setCover(!cover)
-      if (finalData.prediction == "Monkeypox") {
-        router.push('/positive-monkeybox')
-      } else {
-        router.push('/negative-monkeybox')
-      }
     }
   };
 
@@ -87,7 +92,8 @@ export default function Home() {
           <FontAwesomeIcon
             icon={faCloudUploadAlt}
             style={{ fontSize: 200 }} />
-          <input id="uploadImage" className={styles.uploadInputItem} type="file" onChange={uploadToClient}></input>
+          <input id="uploadImage" className={styles.uploadInputItem} type="file" onChange={uploadToClient} accept="image/jpg"></input>
+          {/* <Input type="file" id="uploadImage" className={styles.uploadInputItem} onChange={uploadToClient} inputProps={{ accept: 'image/jpg' }} /> */}
 
           <label htmlFor="uploadImage" className={styles.uploadButtonItem}>
             Upload Image

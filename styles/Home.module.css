@@ -392,7 +392,7 @@
 
 .uploadContent{
   /* border: 1px solid blue; */
-  height: 10vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -478,12 +478,12 @@
 }
 
 .cover {
-  background: url("/public/images/buymecoffe.jpeg") no-repeat scroll center center #FFF;
+  background-image: url(../public/images/loading.gif) no-repeat scroll center center !important;
   position:fixed;
   width:100%;
   height: 100%;
   left:0;right:0;top:0;bottom:0;
-  background-color: rgba(255,255,255,0.5);
+  /* background-color: rgba(255,255,255,0.5); */
   backdrop-filter: blur(5px);
   z-index:9999;
   display: none;
